@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        SVC_ACCOUNT_KEY = credentials('credentials')
+        SVC_ACCOUNT_KEY = credentials('credentials2')
     }
     options {
         disableConcurrentBuilds()
