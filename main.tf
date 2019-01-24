@@ -8,6 +8,7 @@ terraform {
   backend "gcs" {
     bucket  = "shiv-g-tf-state-bucket"
     prefix  = "terraform/state"
+    credentials = "./creds/serviceaccount.json"
   }
 }
 
