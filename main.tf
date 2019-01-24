@@ -18,3 +18,8 @@ module "gcs" {
   bucket_names   = "${var.bucket_names}"
   location = "${var.location}"
 }
+
+module "vm" {
+  source = "Modules/ComputeEngine"
+  vm_name = "${var.vm_name}"
+}

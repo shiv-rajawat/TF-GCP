@@ -9,3 +9,7 @@ variable "bucket_names"{
 variable "location"{
   type = "string"
 }
+
+variable "vm_name"{
+  type = "string"
+}
