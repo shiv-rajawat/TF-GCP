@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        SVC_ACCOUNT_KEY = credentials('oauth (GCP)')
+        SVC_ACCOUNT_KEY = credentials('credentials')
     }
     options {
         disableConcurrentBuilds()
