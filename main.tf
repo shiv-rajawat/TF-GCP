@@ -14,6 +14,6 @@ terraform {
 module "gcs" {
   source = "Modules/CloudStorage"
   count  = "${var.count}"
-  name   = "${var.bucket_names}"
+  bucket_names   = "${var.bucket_names}"
   location = "${var.location}"
 }
